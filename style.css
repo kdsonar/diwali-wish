@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-color: #F99501;
+}
+
+.divider {
+    text-align: center;
+    margin-block: 40px;
+}
+
+.divider img {
+    width: 90%;
+    max-width: 800px;
+}
+
+/* header */
+
+header {
+    height: 100vh;
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    position: relative;
+}
+
+.header-design-image img {
+    height: 285px;
+}
+
+.header-content {
+    margin-left: 250px;
+}
+
+.header-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.audio-container {
+    background-color: #FBD8A4;
+    width: 525px;
+    text-align: center;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.audio-bar audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #FBD8A4;
+    color: #000;
+}
+
+.audio-container span {
+    margin-inline: 10px;
+}
+
+/* .deepak-container {
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+} */
+
+.deepak-container img {
+    width: 250px;
+    margin-right: 25px;
+}
+
+/* section 1 */
+
+.section-1 {
+    text-align: center;
+}
+
+.laxmi-ganesh-1 img {
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+.section-1 .content h2 {
+    font-size: 2.25rem;
+    font-weight: normal;
+}
+
+/* section 2 */
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-content {
+    background-color: white;
+    padding: 50px;
+    width: 550px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.section-2-content h2 {
+    font-size: 1.75rem;
+}
+
+
+.girl-image {
+    margin-left: -70px;
+}
+
+.girl-image img {
+    height: 600px;
+}
+
+/* footer */
+
+.footer-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.ganesh-laxmi-2 img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    align-self: self-start;
+}
+
+.footer-content h2 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+.footer-copyright {
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+    header {
+        background-image: none;
+        height: 650px;
+    }
+
+    .header-design-image img {
+        height: 200px;
+    }
+
+    .header-content {
+        margin-block: 35px;
+        margin-left: 30px;
+    }
+
+    .header-content h2 {
+        font-size: 1.45rem;
+        margin-bottom: 20px;
+    }
+
+    .audio-container {
+        width: 325px;
+    }
+
+    .audio-container span,
+    .sound-wave {
+        display: none;
+    }
+
+    .music-icon {
+        width: 20px;
+    }
+
+    .deepak-container img {
+        width: 225px;
+        margin-right: 20px;
+        float: right;
+    }
+
+    .deepak-2 {
+        display: none;
+    }
+
+    /* section 1 */
+
+    .section-1 {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .laxmi-ganesh-1 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-1 .content h2 {
+        font-size: 1.45rem;
+    }
+
+    /* section 2 */
+
+    .section-2 {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .section-2-content {
+        background-color: white;
+        padding: 15px;
+        width: 500px;
+        height: 250px;
+        border-radius: 25px;
+    }
+
+    .section-2-content h2 {
+        font-size: 1.05rem;
+    }
+
+    .girl-image {
+        margin-left: -30px;
+    }
+
+    .girl-image img {
+        height: 300px;
+    }
+
+    /* footer */
+
+    .footer-space {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0px auto;
+    }
+    
+    .ganesh-laxmi-2 img {
+        max-width: 100%;
+    }
+    
+    .footer-content {
+        align-self: self-start;
+    }
+    
+    .footer-content h2 {
+        margin-top: 10px;
+        font-size: 1.85rem;
+        margin-bottom: 30px;
+    }
+    
+    .footer-copyright {
+        text-align: right;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}

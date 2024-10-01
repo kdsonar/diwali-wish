@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <div class="header-design-image">
+            <img src="images/header-design.png" alt="">
+        </div>
+        <div class="header-content">
+            <h2>
+                <pre>
+Hi, <span id="receiver"></span>
+You mean the world to me...
+So this Diwali,
+I made something for you!</pre>
+            </h2>
+            <div class="audio-container">
+                <img src="images/music-icon.svg" alt="" class="music-icon">
+                <span>Diwali Music</span>
+                <img src="images/sound-wave.svg" alt="" class="sound-wave">
+                <audio src="diwali.mp3" controls></audio>
+            </div>
+        </div>
+        <div class="deepak-container">
+            <img src="images/deepak.png" alt="">
+            <img src="images/deepak.png" alt="" class="deepak-2">
+        </div>
+    </header>
+
+    <div class="divider">
+        <img src="images/divider.svg" alt="">
+    </div>
+
+    <!-- main -->
+
+    <main>
+        <section class="section-1">
+            <div class="laxmi-ganesh-1">
+                <img src="images/laxmi-ganesh-1.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Wishing You a Blessed and Prosperous Deepawali</h2>
+            </div>
+        </section>
+
+        <div class="divider">
+            <img src="images/divider.svg" alt="">
+        </div>
+
+        <section class="section-2">
+            <div class="section-2-content">
+                <h2>
+                    People say, “Diwali is the festival of lights.”
+                    <br><br>
+                    You know what, I can feel the positivity and happiness. My goal is to learn web development and I’m
+                    learning everyday, even today!
+                </h2>
+            </div>
+            <div class="girl-image">
+                <img src="images/girl.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <div class="divider">
+        <img src="images/divider.svg" alt="">
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-space">
+            <div class="ganesh-laxmi-2">
+                <img src="images/laxmi-ganesh-2.png" alt="">
+            </div>
+            <div class="footer-content">
+                <h3>Happy Diwali and,</h3>
+                <h2>Thank You For Everything...</h2>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <h4>Made with 💜 By Kaustubh Sonar</h4>
+        </div>
+    </footer>
+
+    <script>
+        const receiverName = document.querySelector("#receiver");
+        receiverName.innerText = new URLSearchParams(location.search).get(
+            "receiver"
+        );
+    </script>
+</body>
+
+</html>
